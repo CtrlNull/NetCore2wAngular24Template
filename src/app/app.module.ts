@@ -1,10 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core'; //
 import { HttpModule} from '@angular/http';
-
-
 import { AppComponent } from './app.component';
 import { AppService } from './app.service';
+// can import components, directives, pipes, services
 
 
 @NgModule({
@@ -15,7 +14,7 @@ import { AppService } from './app.service';
     BrowserModule,
     HttpModule
   ],
-  providers: [AppService],
+  providers: [AppService], // this is for services
   bootstrap: [AppComponent]
 })
 export class AppModule { }
